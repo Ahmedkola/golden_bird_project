@@ -38,9 +38,10 @@ while(lenght>1):
 ans=list(word)
 #print(ans)
 i=7
+flag=0
 while i>=0:
     if "_" not in str:
-        print("you win")
+        flag=1
         break
     print(f"YOU HAVE {i} LIFE LEFT")
     print(f"Hint: {hint}")
@@ -54,7 +55,11 @@ while i>=0:
         print(str)
     else:
         i=i-1
-print("you loss")   
+ 
+if flag== 1:
+    print("YOU WIN")
+else:
+    print("YOU LOSS")
     
 
 
