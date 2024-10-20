@@ -45,6 +45,9 @@ while i>=0:
         break
     print(f"YOU HAVE {i} LIFE LEFT")
     print(f"Hint: {hint}")
+    joint1=' '.join(str)
+    if(i==7):
+        print(joint1)
     input_letter = input("Enter your guess: ").lower()
     if(input_letter in word):
         j=-1
@@ -52,7 +55,8 @@ while i>=0:
             j=j+1
             if input_letter == x:
                 str[j]=input_letter
-        print(str)
+        joint=' '.join(str)
+        print(joint)
     else:
         i=i-1
  
